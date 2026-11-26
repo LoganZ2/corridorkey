@@ -33,8 +33,8 @@ export const CORRIDORS: CorridorConfig[] = [
     tickerId: 'USDT_NGN',
     sampleContractor: 'Chinedu Okafor',
     sampleRole: 'Smart Contract QA Contributor',
-    // Celo Public Goods external recipient example
-    sampleRecipient: '0x62b98f4a22325120585118543f91bb707784c520',
+    // Official Celo Public Goods (celopg.eth) independent external recipient
+    sampleRecipient: '0x017FF2643E1A6d500A54e2c15f8186C87795CbBe',
   },
   {
     id: 'USDT_wBRL',
@@ -47,7 +47,7 @@ export const CORRIDORS: CorridorConfig[] = [
     tickerId: 'USDT_WBRL',
     sampleContractor: 'Camila Ferreira',
     sampleRole: 'Frontend Design Systems Contractor',
-    sampleRecipient: '0x62b98f4a22325120585118543f91bb707784c520',
+    sampleRecipient: '0x017FF2643E1A6d500A54e2c15f8186C87795CbBe',
   },
   {
     id: 'USDT_wARS',
@@ -60,7 +60,7 @@ export const CORRIDORS: CorridorConfig[] = [
     tickerId: 'USDT_WARS',
     sampleContractor: 'Mateo Álvarez',
     sampleRole: 'Protocol Indexing Engineer',
-    sampleRecipient: '0x62b98f4a22325120585118543f91bb707784c520',
+    sampleRecipient: '0x017FF2643E1A6d500A54e2c15f8186C87795CbBe',
   },
   {
     id: 'USDT_wCOP',
@@ -73,7 +73,7 @@ export const CORRIDORS: CorridorConfig[] = [
     tickerId: 'USDT_COP',
     sampleContractor: 'Valeria Rojas',
     sampleRole: 'Technical Documentation Writer',
-    sampleRecipient: '0x62b98f4a22325120585118543f91bb707784c520',
+    sampleRecipient: '0x017FF2643E1A6d500A54e2c15f8186C87795CbBe',
   },
   {
     id: 'USDT_IDRX',
@@ -86,7 +86,7 @@ export const CORRIDORS: CorridorConfig[] = [
     tickerId: 'USDT_IDR',
     sampleContractor: 'Raka Pratama',
     sampleRole: 'DevOps & RPC Reliability Engineer',
-    sampleRecipient: '0x62b98f4a22325120585118543f91bb707784c520',
+    sampleRecipient: '0x017FF2643E1A6d500A54e2c15f8186C87795CbBe',
   },
 ];
 

@@ -6,37 +6,57 @@
   "altanaKeyStore": "0x83b30935f36d6ccf9B1ec3b5E47F2866b97cd27c",
   "erc8004Registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
   "textileReactor": "0xa9AA0a64769cBed4d3B1Ceb4Df01CdE915C235b3",
-  "erc8004AgentId": null,
-  "sessionKeyAddress": null,
-  "updatedAt": "2026-11-26T22:35:00.000Z",
+  "erc8004AgentId": "10153",
+  "sessionKeyAddress": "0xEE55dA69254EeCc4c428384E5e6bc8ce1bb02f56",
+  "updatedAt": "2026-11-26T23:03:47.359Z",
   "proofs": [
     {
       "step": "01 · Altana Smart Agentic Wallet & Session Grant (grantSession)",
       "track": "ALTANA",
-      "status": "READY_AWAITING_FAUCET",
+      "status": "CONFIRMED",
+      "txHash": "0x6a5fceac429dbf173e98de0eab6415762141e939acf74fca99de2e08aa49f11a",
+      "explorerUrl": "https://celoscan.io/tx/0x6a5fceac429dbf173e98de0eab6415762141e939acf74fca99de2e08aa49f11a",
       "attributionTagged": true,
-      "detail": "Grants scoped session key on Celo KeyStore (0x83b3...d27c) with $5 USD₮ daily cap, Textile Reactor allowlist, 24h expiry, and ERC-8021 tag celo_4217c9fa0403."
+      "detail": "Granted scoped session 0xEE55dA69… on Celo KeyStore ($5/day USD₮ cap, Textile Reactor + Permit2 + USD₮ + cNGN allowlist, 24h TTL). Initial wallet registration tx: 0x64d49807…74a03."
     },
     {
-      "step": "02 · ERC-8004 On-Chain Agent Identity Registration",
+      "step": "02 · ERC-8004 On-Chain Agent Identity Registration (#10153)",
       "track": "ERC_8004",
-      "status": "READY_AWAITING_FAUCET",
+      "status": "CONFIRMED",
+      "txHash": "0x8d9dacd435725f5032fc9d5fedaa9ea18119eb17feeb848b4f5889fe77b9e179",
+      "explorerUrl": "https://celoscan.io/tx/0x8d9dacd435725f5032fc9d5fedaa9ea18119eb17feeb848b4f5889fe77b9e179",
       "attributionTagged": true,
-      "detail": "Mints CorridorKey AgentIdentity ERC-721 NFT at 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432 (verifiable on 8004scan.io)."
+      "detail": "Auto-minted CorridorKey ERC-8004 AgentIdentity NFT #10153 at 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432 (verifiable on 8004scan.io)."
     },
     {
-      "step": "03 · Tagged Textile FX Conversion (USD₮ → cNGN) & External Payout",
-      "track": "TEXTILE_FX",
-      "status": "READY_AWAITING_FAUCET",
+      "step": "03 · In-Policy Altana Session Execution (0.01 USD₮ → celopg.eth)",
+      "track": "ALTANA",
+      "status": "CONFIRMED",
+      "txHash": "0x95bc39ff3370817c03eae93be64676e8131d74bc559461efbf00f15ea4cd8823",
+      "explorerUrl": "https://celoscan.io/tx/0x95bc39ff3370817c03eae93be64676e8131d74bc559461efbf00f15ea4cd8823",
       "attributionTagged": true,
-      "detail": "Executes EIP-712 TakerControl RFQ v2 swap via Textile LimitOrderReactor (0xa9AA...35b3) with celo_4217c9fa0403 calldata suffix and delivers cNGN to an independent external recipient."
+      "detail": "Agent executed in-policy 0.01 USD₮ transfer to celopg.eth (0x017FF264…) using scoped session key with ERC-8021 tag celo_4217c9fa0403. Spend-cap breach rejected (spend_limit_exceeded): This session key's spending limit does not cover this in USD₮. Grant a new session key with a higher limit, as limits cannot be raised."
     },
     {
       "step": "04 · On-Chain Session Revocation (revokeSession) & Agent Halt Proof",
       "track": "ALTANA",
-      "status": "READY_AWAITING_FAUCET",
+      "status": "CONFIRMED",
+      "txHash": "0xc0541f30b86153e7db0762eed1a1d5dfdf779dde476d79b3f8f04aa423e8cbe6",
+      "explorerUrl": "https://celoscan.io/tx/0xc0541f30b86153e7db0762eed1a1d5dfdf779dde476d79b3f8f04aa423e8cbe6",
       "attributionTagged": true,
-      "detail": "Calls revokeSession() on Celo KeyStore and verifies that a subsequent agent execution attempt reverts on-chain."
+      "detail": "Post-revoke agent execute blocked on-chain (unknown): Key hash 0xd15da6d4207ded3a20f39ae8da1a51c065e78acdf05348344acd0cd32a59b526 is unknown. Try again; the debug log has the whole failure."
+    },
+    {
+      "step": "05 · Tagged Textile FX Conversion (1.00 USD₮ → 1438.62 cNGN) & External Payout",
+      "track": "TEXTILE_FX",
+      "status": "CONFIRMED",
+      "txHash": "0x06b28895531ed6a0a878cc9bebab4e8264158690a48b278a9df9323c3433531a",
+      "explorerUrl": "https://celoscan.io/tx/0x06b28895531ed6a0a878cc9bebab4e8264158690a48b278a9df9323c3433531a",
+      "attributionTagged": true,
+      "detail": "Swapped 1.00 USD₮ → 1438.62 cNGN via Textile LimitOrderReactor (RFQ rfq_hvUsbR8lQNTSa8de, ERC-8021 tag celo_4217c9fa0403) and delivered full 1438.62 cNGN to official external recipient celopg.eth (0x017FF264…, payout tx: 0xecac2ca0b5df4bb095056963e02d37336b0f5cc1fa3d83e1cea4bad9d81d5b20)."
     }
-  ]
+  ],
+  "externalRecipient": "0x017FF2643E1A6d500A54e2c15f8186C87795CbBe",
+  "textileSwapTxHash": "0x06b28895531ed6a0a878cc9bebab4e8264158690a48b278a9df9323c3433531a",
+  "payoutTxHash": "0xecac2ca0b5df4bb095056963e02d37336b0f5cc1fa3d83e1cea4bad9d81d5b20"
 }
