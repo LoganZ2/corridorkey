@@ -1,0 +1,25 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "CorridorKey Payroll & FX Settlement Agent",
+  "description": "Session-keyed autonomous cross-border stablecoin payroll and Textile FX corridor settlement agent operating from an Altana Smart Agentic Wallet on Celo Mainnet with ERC-8021 attribution (celo_4217c9fa0403) and x402 compliance receipts.",
+  "image": "https://loganz2.github.io/corridorkey/corridorkey-icon.png",
+  "active": true,
+  "endpoints": [
+    {
+      "name": "web",
+      "endpoint": "https://loganz2.github.io/corridorkey/"
+    },
+    {
+      "name": "x402",
+      "endpoint": "https://loganz2.github.io/corridorkey/#x402"
+    }
+  ],
+  "supportedTrust": ["reputation", "altana-keystore-session", "erc-8021-attribution"],
+  "celo": {
+    "chainId": 42220,
+    "agentWallet": "0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176",
+    "attributionTag": "celo_4217c9fa0403",
+    "altanaKeyStore": "0x83b30935f36d6ccf9B1ec3b5E47F2866b97cd27c",
+    "textileReactor": "0xa9AA0a64769cBed4d3B1Ceb4Df01CdE915C235b3"
+  }
+}

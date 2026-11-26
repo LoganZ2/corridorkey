@@ -1,0 +1,428 @@
+{
+  "capturedAt": "2026-11-26T22:32:43.058Z",
+  "tickers": [
+    {
+      "ticker_id": "USDT_NGN",
+      "base_currency": "USDT",
+      "target_currency": "NGN",
+      "last_price": "1439.91",
+      "base_volume": "1081630.46",
+      "target_volume": "1559614987.27",
+      "bid": "1438.58",
+      "ask": "1439.42",
+      "high": "1445.06",
+      "low": "1436.84"
+    },
+    {
+      "ticker_id": "WETH_USDT",
+      "base_currency": "WETH",
+      "target_currency": "USDT",
+      "last_price": "1697.41",
+      "base_volume": "0.05",
+      "target_volume": "83.91",
+      "bid": "0",
+      "ask": "0",
+      "high": "1697.41",
+      "low": "1697.41"
+    },
+    {
+      "ticker_id": "USDT_WARS",
+      "base_currency": "USDT",
+      "target_currency": "WARS",
+      "last_price": "1743.69",
+      "base_volume": "125314.90",
+      "target_volume": "220590952.60",
+      "bid": "1740.6",
+      "ask": "0",
+      "high": "1774.82",
+      "low": "1741.68"
+    },
+    {
+      "ticker_id": "USDT_WBRL",
+      "base_currency": "USDT",
+      "target_currency": "WBRL",
+      "last_price": "5.6654",
+      "base_volume": "2319.75",
+      "target_volume": "13129.33",
+      "bid": "5.6606",
+      "ask": "0",
+      "high": "5.6727",
+      "low": "5.6463"
+    },
+    {
+      "ticker_id": "USDC_USDT",
+      "base_currency": "USDC",
+      "target_currency": "USDT",
+      "last_price": "1.0012",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "1.0012",
+      "low": "1.0012"
+    },
+    {
+      "ticker_id": "USDT_MYRC",
+      "base_currency": "USDT",
+      "target_currency": "MYRC",
+      "last_price": "4.1106",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "4.1106",
+      "low": "4.1106"
+    },
+    {
+      "ticker_id": "USDC_ZARP",
+      "base_currency": "USDC",
+      "target_currency": "ZARP",
+      "last_price": "17.6401",
+      "base_volume": "1958.38",
+      "target_volume": "34568.71",
+      "bid": "17.6164",
+      "ask": "17.6516",
+      "high": "17.7013",
+      "low": "17.6190"
+    },
+    {
+      "ticker_id": "USDT_AUDX",
+      "base_currency": "USDT",
+      "target_currency": "AUDX",
+      "last_price": "1.5055",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "1.5055",
+      "low": "1.5055"
+    },
+    {
+      "ticker_id": "USDC_JPYDF",
+      "base_currency": "USDC",
+      "target_currency": "JPYdf",
+      "last_price": "159.19",
+      "base_volume": "5998.80",
+      "target_volume": "954967.50",
+      "bid": "159.14",
+      "ask": "159.37",
+      "high": "159.19",
+      "low": "159.19"
+    },
+    {
+      "ticker_id": "XAUT_XAUE",
+      "base_currency": "XAUt",
+      "target_currency": "XAUE",
+      "last_price": "987.06",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "987.06",
+      "low": "987.06"
+    },
+    {
+      "ticker_id": "VGBP_USDT",
+      "base_currency": "VGBP",
+      "target_currency": "USDT",
+      "last_price": "1.3110",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "1.3110",
+      "ask": "0",
+      "high": "1.3110",
+      "low": "1.3110"
+    },
+    {
+      "ticker_id": "VCHF_USDT",
+      "base_currency": "VCHF",
+      "target_currency": "USDT",
+      "last_price": "1.1990",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "1.1990",
+      "ask": "0",
+      "high": "1.1990",
+      "low": "1.1990"
+    },
+    {
+      "ticker_id": "USDT_ZARP",
+      "base_currency": "USDT",
+      "target_currency": "ZARP",
+      "last_price": "17.6476",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "17.6476",
+      "low": "17.6476"
+    },
+    {
+      "ticker_id": "USDT_AUDD",
+      "base_currency": "USDT",
+      "target_currency": "AUDD",
+      "last_price": "1.5056",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "1.5056",
+      "low": "1.5056"
+    },
+    {
+      "ticker_id": "USDC_NTZS",
+      "base_currency": "USDC",
+      "target_currency": "nTZS",
+      "last_price": "2682.19",
+      "base_volume": "421.30",
+      "target_volume": "1130014.00",
+      "bid": "2676.29",
+      "ask": "2682.73",
+      "high": "2682.19",
+      "low": "2682.19"
+    },
+    {
+      "ticker_id": "USDT_CELO",
+      "base_currency": "USDT",
+      "target_currency": "CELO",
+      "last_price": "17.1382",
+      "base_volume": "44542.16",
+      "target_volume": "778794.41",
+      "bid": "17.1055",
+      "ask": "0",
+      "high": "17.8374",
+      "low": "17.0501"
+    },
+    {
+      "ticker_id": "USDT_USAT",
+      "base_currency": "USDT",
+      "target_currency": "USAT",
+      "last_price": "1.0045",
+      "base_volume": "7187.38",
+      "target_volume": "7219.71",
+      "bid": "0",
+      "ask": "1.0007",
+      "high": "1.0049",
+      "low": "1.0045"
+    },
+    {
+      "ticker_id": "USDT_BRL",
+      "base_currency": "USDT",
+      "target_currency": "BRL",
+      "last_price": "5.6623",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "5.6623",
+      "low": "5.6623"
+    },
+    {
+      "ticker_id": "USDC_ZARU",
+      "base_currency": "USDC",
+      "target_currency": "ZARU",
+      "last_price": "17.6465",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "17.6465",
+      "low": "17.6465"
+    },
+    {
+      "ticker_id": "USDT_IDR",
+      "base_currency": "USDT",
+      "target_currency": "IDR",
+      "last_price": "18404.68",
+      "base_volume": "230485.01",
+      "target_volume": "4248281545.63",
+      "bid": "18457.73",
+      "ask": "18457.34",
+      "high": "18481.21",
+      "low": "18382.35"
+    },
+    {
+      "ticker_id": "USDT_COP",
+      "base_currency": "USDT",
+      "target_currency": "COP",
+      "last_price": "3527.06",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "3527.06",
+      "high": "3527.06",
+      "low": "3527.06"
+    },
+    {
+      "ticker_id": "USDT_MXN",
+      "base_currency": "USDT",
+      "target_currency": "MXN",
+      "last_price": "19.6990",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "19.6990",
+      "low": "19.6990"
+    },
+    {
+      "ticker_id": "CNGN_GD",
+      "base_currency": "cNGN",
+      "target_currency": "GD",
+      "last_price": "6.0582",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "6.0582",
+      "low": "6.0582"
+    },
+    {
+      "ticker_id": "USDT_GD",
+      "base_currency": "USDT",
+      "target_currency": "GD",
+      "last_price": "8717.74",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "8717.74",
+      "low": "8717.74"
+    },
+    {
+      "ticker_id": "USDC_NGN",
+      "base_currency": "USDC",
+      "target_currency": "NGN",
+      "last_price": "1438.14",
+      "base_volume": "1918.36",
+      "target_volume": "2765470.56",
+      "bid": "1438.57",
+      "ask": "0",
+      "high": "1445.06",
+      "low": "1438.14"
+    },
+    {
+      "ticker_id": "XAUT_USDT",
+      "base_currency": "XAUT",
+      "target_currency": "USDT",
+      "last_price": "3568.2",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "3568.2",
+      "low": "3568.2"
+    },
+    {
+      "ticker_id": "USDT_BRLA",
+      "base_currency": "USDT",
+      "target_currency": "BRLA",
+      "last_price": "5.2709",
+      "base_volume": "0",
+      "target_volume": "0",
+      "bid": "0",
+      "ask": "0",
+      "high": "5.2709",
+      "low": "5.2709"
+    }
+  ],
+  "previews": {
+    "USDT_cNGN": {
+      "status": "preview",
+      "sellAmount": "1000000",
+      "buyAmount": "1439049174",
+      "feeAmount": "199",
+      "takerPays": "1000000",
+      "rateRay": "694765000434933017792760",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      },
+      "availableSellAmount": "146567065343"
+    },
+    "USDT_wBRL": {
+      "status": "preview",
+      "sellAmount": "1000000",
+      "buyAmount": "5660507180822886661",
+      "feeAmount": "199",
+      "takerPays": "1000000",
+      "rateRay": "176627459000000000003988264",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      },
+      "availableSellAmount": "9301876520"
+    },
+    "USDT_wARS": {
+      "status": "preview",
+      "sellAmount": "1000000",
+      "buyAmount": "1740125000652676757919",
+      "feeAmount": "199",
+      "takerPays": "1000000",
+      "rateRay": "574557000000000000000191",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      },
+      "availableSellAmount": "35856755097"
+    },
+    "USDT_wMXN": {
+      "status": "no_quote",
+      "reason": "no_makers_online",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      }
+    },
+    "USDT_wCOP": {
+      "status": "preview",
+      "sellAmount": "1000000",
+      "buyAmount": "3524943942235823379260",
+      "feeAmount": "199",
+      "takerPays": "1000000",
+      "rateRay": "283636000000000000000059",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      },
+      "availableSellAmount": "6591727"
+    },
+    "USDT_IDRX": {
+      "status": "preview",
+      "sellAmount": "1000000",
+      "buyAmount": "1845775",
+      "feeAmount": "199",
+      "takerPays": "1000000",
+      "rateRay": "54167003020411480272514",
+      "routing": {
+        "preferenceApplied": false,
+        "restrictionApplied": false,
+        "fallbackUsed": false,
+        "targetMakerWallets": [],
+        "preferredQuotesReceived": 0,
+        "openMarketQuotesReceived": 0
+      },
+      "availableSellAmount": "364406048847"
+    }
+  }
+}

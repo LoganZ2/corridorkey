@@ -1,0 +1,42 @@
+{
+  "network": "Celo Mainnet (42220)",
+  "agentWallet": "0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176",
+  "payoutWallet": "0x597bD617b28383938478A17017e9834B2B73e0D9",
+  "attributionTag": "celo_4217c9fa0403",
+  "altanaKeyStore": "0x83b30935f36d6ccf9B1ec3b5E47F2866b97cd27c",
+  "erc8004Registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "textileReactor": "0xa9AA0a64769cBed4d3B1Ceb4Df01CdE915C235b3",
+  "erc8004AgentId": null,
+  "sessionKeyAddress": null,
+  "updatedAt": "2026-11-26T22:35:00.000Z",
+  "proofs": [
+    {
+      "step": "01 · Altana Smart Agentic Wallet & Session Grant (grantSession)",
+      "track": "ALTANA",
+      "status": "READY_AWAITING_FAUCET",
+      "attributionTagged": true,
+      "detail": "Grants scoped session key on Celo KeyStore (0x83b3...d27c) with $5 USD₮ daily cap, Textile Reactor allowlist, 24h expiry, and ERC-8021 tag celo_4217c9fa0403."
+    },
+    {
+      "step": "02 · ERC-8004 On-Chain Agent Identity Registration",
+      "track": "ERC_8004",
+      "status": "READY_AWAITING_FAUCET",
+      "attributionTagged": true,
+      "detail": "Mints CorridorKey AgentIdentity ERC-721 NFT at 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432 (verifiable on 8004scan.io)."
+    },
+    {
+      "step": "03 · Tagged Textile FX Conversion (USD₮ → cNGN) & External Payout",
+      "track": "TEXTILE_FX",
+      "status": "READY_AWAITING_FAUCET",
+      "attributionTagged": true,
+      "detail": "Executes EIP-712 TakerControl RFQ v2 swap via Textile LimitOrderReactor (0xa9AA...35b3) with celo_4217c9fa0403 calldata suffix and delivers cNGN to an independent external recipient."
+    },
+    {
+      "step": "04 · On-Chain Session Revocation (revokeSession) & Agent Halt Proof",
+      "track": "ALTANA",
+      "status": "READY_AWAITING_FAUCET",
+      "attributionTagged": true,
+      "detail": "Calls revokeSession() on Celo KeyStore and verifies that a subsequent agent execution attempt reverts on-chain."
+    }
+  ]
+}

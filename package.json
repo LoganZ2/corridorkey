@@ -1,0 +1,32 @@
+{
+  "name": "corridorkey",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Session-keyed autonomous cross-border stablecoin payroll & FX settlement agent on Celo Mainnet (Altana Smart Agentic Wallet + Textile FX + ERC-8004 + ERC-8021 + x402)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "agent:setup": "node --env-file=.env.local scripts/run_agent_mainnet.mjs"
+  },
+  "dependencies": {
+    "@altananetwork/sdk": "latest",
+    "@celo/attribution-tags": "latest",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "viem": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
+  }
+}
