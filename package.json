@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "verify:mainnet": "node scripts/verify_mainnet_proofs.mjs",
     "agent:setup": "node --env-file=.env.local scripts/run_agent_mainnet.mjs"
   },
   "dependencies": {

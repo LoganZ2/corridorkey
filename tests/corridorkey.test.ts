@@ -1,5 +1,9 @@
 import { fromDataSuffix } from '@celo/attribution-tags';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { isAddress } from 'viem';
 import { describe, expect, it } from 'vitest';
+import mainnetProofs from '../src/data/mainnetProofs.json';
 import {
   buildCorridorQuote,
   buildTaggedTransferCalldata,
@@ -125,5 +129,67 @@ describe('CorridorKey Altana Smart Wallet Session Policy Engine', () => {
     expect(res.allowed).toBe(false);
     expect(res.verdict).toBe('BLOCKED_EXPIRED');
     expect(res.errorCode).toBe('ALTANA_SESSION_EXPIRED');
+  });
+
+  it('prioritizes revocation kill-switch verdict even when spend cap is simultaneously breached', () => {
+    const res = evaluateSessionPolicy({
+      policy: { ...basePolicy, revoked: true, spentTodayUsdt: 4.9 },
+      targetContract: CELO_CONTRACTS.TEXTILE_REACTOR,
+      recipient: CORRIDORS[0].sampleRecipient,
+      amountUsdt: 2.0,
+      nowUnix: 1800000000,
+    });
+    expect(res.allowed).toBe(false);
+    expect(res.verdict).toBe('BLOCKED_REVOKED');
+    expect(res.errorCode).toBe('ALTANA_SESSION_REVOKED');
+  });
+});
+
+describe('CorridorKey Mainnet Proof Bundle & ERC-8004 Manifest Integrity', () => {
+  it('normalizes lowercase recipient addresses cleanly when encoding tagged ERC-20 transfer calldata', () => {
+    const lowerRecipient = '0x017ff2643e1a6d500a54e2c15f8186c87795cbbe' as `0x${string}`;
+    const calldata = buildTaggedTransferCalldata(lowerRecipient, 10_000n);
+    expect(calldata.startsWith('0xa9059cbb')).toBe(true);
+    expect(fromDataSuffix(calldata)?.codes).toContain(LOOPS_ATTRIBUTION_TAG);
+  });
+
+  it('generates valid Celo x402 payment requirements for every corridor', () => {
+    for (const c of CORRIDORS) {
+      const spec = buildX402ReceiptSpec(c.id, 1.0);
+      expect(spec.httpStatus).toBe(402);
+      expect(spec.paymentRequirements.network).toBe('eip155:42220');
+      expect(spec.paymentRequirements.maxAmountRequired).toBe('10000');
+      expect(spec.quoteSnapshot.estimatedLocalPayout).toContain(c.code);
+    }
+  });
+
+  it('keeps public/agent.json ERC-8004 manifest synchronized with verified Celo Mainnet proofs', () => {
+    const manifestPath = resolve(import.meta.dirname, '..', 'public', 'agent.json');
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+
+    expect(manifest.type).toBe('https://eips.ethereum.org/EIPS/eip-8004#registration-v1');
+    expect(manifest.celo.chainId).toBe(42220);
+    expect(manifest.celo.erc8004AgentId).toBe(mainnetProofs.erc8004AgentId);
+    expect(manifest.celo.agentWallet).toBe(mainnetProofs.agentWallet);
+    expect(manifest.celo.attributionTag).toBe(LOOPS_ATTRIBUTION_TAG);
+    expect(Object.keys(manifest.celo.verifiedTransactions)).toHaveLength(7);
+
+    for (const txHash of Object.values(manifest.celo.verifiedTransactions) as string[]) {
+      expect(txHash).toMatch(/^0x[a-f0-9]{64}$/);
+    }
+  });
+
+  it('stores valid checksummed Celo contract addresses and confirmed hashes in mainnetProofs.json', () => {
+    expect(isAddress(mainnetProofs.agentWallet)).toBe(true);
+    expect(isAddress(mainnetProofs.altanaKeyStore)).toBe(true);
+    expect(isAddress(mainnetProofs.erc8004Registry)).toBe(true);
+    expect(isAddress(mainnetProofs.textileReactor)).toBe(true);
+    expect(isAddress(mainnetProofs.externalRecipient)).toBe(true);
+    expect(mainnetProofs.proofs).toHaveLength(5);
+    for (const proof of mainnetProofs.proofs) {
+      expect(proof.status).toBe('CONFIRMED');
+      expect(proof.txHash).toMatch(/^0x[a-f0-9]{64}$/);
+      expect(proof.attributionTagged).toBe(true);
+    }
   });
 });

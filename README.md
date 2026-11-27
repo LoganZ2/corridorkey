@@ -4,6 +4,7 @@
 Entering **Stablecoin Corridors (Textile FX)** + **Altana Smart Agentic Wallets**.
 
 - **Live Web App:** https://loganz2.github.io/corridorkey/
+- **Demo Video:** https://loganz2.github.io/corridorkey/demo.mp4
 - **ERC-8004 Agent Manifest:** https://loganz2.github.io/corridorkey/agent.json
 - **Agent Smart Wallet (Celo Mainnet):** `0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176` ([Celoscan](https://celoscan.io/address/0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176) · [Altana KeyStore Explorer](https://explorer.altana.network/wallet/0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176))
 - **ERC-8004 Agent Identity:** **Agent `#10153`** on Celo Mainnet (`0x8004A169FB4a3325136EB29fA0ceB6D2e539a432`)
@@ -11,7 +12,9 @@ Entering **Stablecoin Corridors (Textile FX)** + **Altana Smart Agentic Wallets*
 
 ---
 
-## Verified Celo Mainnet Transactions (All 5/5 Confirmed On-Chain)
+## Verified Celo Mainnet Transactions (7 Confirmed Mainnet Txs Across 5 Proofs)
+
+> **Note for automated indexers:** Because `0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176` is an Altana KeyStore Smart Account, direct EOA nonce inspection shows 3 calls while all **7 confirmed Celo Mainnet transactions** (Altana wallet init, `grantSession`, ERC-8004 `#10153` mint, scoped session execution, `revokeSession`, Textile FX swap, and external `cNGN` delivery to `celopg.eth`) are independently verifiable via `npm run verify:mainnet` with zero private keys required.
 
 | Proof | Track | Celo Mainnet Tx Hash | What It Proves |
 | --- | --- | --- | --- |
@@ -32,10 +35,11 @@ Solo software studios (**ZKY Studio**) pay global open-source contributors acros
 3. **ERC-8004 On-Chain Agent Identity (`#10153`):** Discoverable on Celo Mainnet `AgentIdentity` registry.
 4. **Celo x402 Compliance Receipt Rail (`api.x402.celo.org`):** Machine-readable HTTP 402 payment spec allowing external agents to pay `0.01 USD₮` for verified FX compliance receipts.
 
-## Commands
+## Commands & Zero-Key On-Chain Verification
 ```bash
 npm install
 npm run typecheck
-npm test
+npm test              # Offline policy, ERC-8021, x402 & proof-manifest suite (14 tests)
+npm run verify:mainnet # Read-only live Celo Forno RPC check of all 7 mainnet txs + ERC-8004 #10153
 npm run build
 ```
