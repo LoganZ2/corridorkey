@@ -12,14 +12,30 @@
     {
       "name": "x402",
       "endpoint": "https://loganz2.github.io/corridorkey/#x402"
+    },
+    {
+      "name": "demo",
+      "endpoint": "https://loganz2.github.io/corridorkey/demo.mp4"
     }
   ],
   "supportedTrust": ["reputation", "altana-keystore-session", "erc-8021-attribution"],
   "celo": {
     "chainId": 42220,
     "agentWallet": "0x04801c703843Bf51a112Fa4dC8A7B2Bb4d0D1176",
+    "erc8004AgentId": "10153",
+    "erc8004Registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
     "attributionTag": "celo_4217c9fa0403",
     "altanaKeyStore": "0x83b30935f36d6ccf9B1ec3b5E47F2866b97cd27c",
-    "textileReactor": "0xa9AA0a64769cBed4d3B1Ceb4Df01CdE915C235b3"
+    "textileReactor": "0xa9AA0a64769cBed4d3B1Ceb4Df01CdE915C235b3",
+    "externalRecipient": "0x017FF2643E1A6d500A54e2c15f8186C87795CbBe",
+    "verifiedTransactions": {
+      "altanaWalletInit": "0x64d49807b39f3e8b7a0c3163ea568ec34437b4a94446c02db916bb81e7e74a03",
+      "altanaGrantSession": "0x6a5fceac429dbf173e98de0eab6415762141e939acf74fca99de2e08aa49f11a",
+      "erc8004Register": "0x8d9dacd435725f5032fc9d5fedaa9ea18119eb17feeb848b4f5889fe77b9e179",
+      "altanaSessionExecute": "0x95bc39ff3370817c03eae93be64676e8131d74bc559461efbf00f15ea4cd8823",
+      "altanaRevokeSession": "0xc0541f30b86153e7db0762eed1a1d5dfdf779dde476d79b3f8f04aa423e8cbe6",
+      "textileFxSwap": "0x06b28895531ed6a0a878cc9bebab4e8264158690a48b278a9df9323c3433531a",
+      "externalCngnPayout": "0xecac2ca0b5df4bb095056963e02d37336b0f5cc1fa3d83e1cea4bad9d81d5b20"
+    }
   }
 }
